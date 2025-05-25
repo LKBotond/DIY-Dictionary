@@ -13,12 +13,6 @@ void Dictionary::initializeSecondHalf()
 void Dictionary::initializeDict()
 {
     hashTable = new node *[table_Size]();
-    /*
-    std::thread worker1(&Dictionary::initializeFirstHalf,this);
-    std::thread worker2(&Dictionary::initializeSecondHalf,this);
-    worker1.join();
-    worker2.join();
-    */
 }
 
 void Dictionary::toLowerCase(std::string &input)
