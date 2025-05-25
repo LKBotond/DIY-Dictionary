@@ -27,39 +27,4 @@ int main()
     }
     std::cout << "dictionary deleted" << std::endl;
 }
-
-/*
-#include "./dictionary/dictionary.h"
-int main()
-{
-    initializeDict();
-    log("Dict array initialized to nullptr");
-    if (!loadDictionary(".\\dict\\words.txt"))
-    {
-        log("dict failed to load");
-        return 1;
-    }
-    while (true)
-    {
-        std::string input;
-        std::cin >> input;
-        char *c_string = stringToChar(input);
-        if (input == "X")
-        {
-            delete c_string;
-            c_string = nullptr;
-            break;
-        }
-        if (checkForWord(c_string))
-        {
-            std::cout << input << " foundd in the dictionary";
-        }
-        else
-        {
-            std::cout << input << " is not within the dictionary";
-        }
-        delete c_string;
-        c_string = nullptr;
-    }
-}
     */
