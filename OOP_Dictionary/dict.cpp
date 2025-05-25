@@ -95,11 +95,6 @@ bool Dictionary::putNodeInDict(node *&current, node *new_Node)
     }
 }
 
-/*
-    std::future<int> left_Future = std::async(std::launch::async, &Dictionary::getDepth, this, current->left);
-    std::future<int> right_Future = std::async(std::launch::async, &Dictionary::getDepth, this, current->right);
-*/
-
 void Dictionary::unloadDictionary()
 {
 
